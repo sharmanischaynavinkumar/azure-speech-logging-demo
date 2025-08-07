@@ -1,0 +1,36 @@
+{
+  "name": "Azure Speech Logging Demo",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [
+    "--name", "azure-speech-logging-demo"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.vscode-eslint"
+      ],
+      "settings": {
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "emmet.includeLanguages": {
+          "typescript": "html",
+          "typescriptreact": "html"
+        }
+      }
+    }
+  },
+  "forwardPorts": [3000, 3001],
+  "remoteUser": "root"
+}

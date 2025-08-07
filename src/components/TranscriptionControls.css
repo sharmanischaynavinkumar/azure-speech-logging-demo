@@ -1,0 +1,24 @@
+/* TranscriptionControls.css */
+.transcription-controls h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.mode-selection {
+  margin-bottom: 20px;
+}
+
+.mode-selection label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.mode-selection input[type="radio"] {
+  margin-right: 8px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+}

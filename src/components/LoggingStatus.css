@@ -1,0 +1,40 @@
+/* LoggingStatus.css */
+.logging-status h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.status-item:last-child {
+  border-bottom: none;
+}
+
+.status-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.status-value {
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.status-value.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-value.inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
